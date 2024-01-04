@@ -1,4 +1,3 @@
-
 int main()
 {
     int val1, val2, choice;
