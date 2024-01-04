@@ -1,3 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int MainMenu(){
+	 int val1, val2, choice;
+    char continueChoice = 'y';
+cout
+                << "--- Please Select for Math Solution to use ---\n"
+                << "1. Add\n"
+                << "2. Subtract\n"
+                << "3. Multipliction\n"
+                << "4. Division\n"
+                << "\n"
+                << "Enter Choice: ";
+            cin >> choice;
+			return choice;
+            system("cls");	
+}
+
 int main()
 {
     int val1, val2, choice;
@@ -7,19 +26,8 @@ int main()
     {
         do
         {
-            cout
-                << "--- Please Select for Math Solution to use ---\n"
-                << "1. Add\n"
-                << "2. Subtract\n"
-                << "3. Multipliction\n"
-                << "4. Division\n"
-                << "\n"
-                << "Enter Choice: ";
-            cin >> choice;
 
-            system("cls");
-
-            switch (choice)
+            switch (MainMenu())
             {
             case 1:
                 cout << "Please input value 1:";
